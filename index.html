@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Museum Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MUSEUM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#ticket">Ticket</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container-fluid px-0">
+        <div class="row align-items-center content" id="home">
+            <div class="col-lg-6">
+                <div>
+                    <h1 class="text-black text-center d-none d-lg-block" id="title-head">MUSEUM OF ART</h1>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img class="img-fluid"
+                    src="images/Art Gallery Museum Interior Cartoon Illustration Exhibition, Culture, Sculpture and Painting for Some People to See it in Flat Style Design.jpeg"
+                    alt="hero image">
+            </div>
+        </div>
+
+        <div class="row align-items-center content" id="about">
+            <div class="col-md-6 order-2 order-md-1">
+                <img src="images/Docents Gone Wild.jpeg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6 text-center order-1 order-md-2">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 blurb pt-3">
+                        <h2>Musium of Art</h2>
+                        <img class=""
+                            src="images/Greek_Sculpture_Cartoon_Male_Head_Vector_Graphic_Illustration_Background__Religion__Background__Old_Background_Image_And_Wallpaper_for_Free_Download-removebg-preview.png"
+                            alt="" height="60" d-none d-lg-inline>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia maiores quas labore cumque?
+                            Nesciunt
+                            rerum iste cum obcaecati dignissimos facere, minus culpa. Voluptatibus, sapiente asperiores
+                            facere
+                            numquam officiis recusandae ad. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Explicabo quo aliquid ipsum praesentium iste error libero nesciunt optio recusandae nisi
+                            expedita veniam vel esse, quae omnis eos? Maiores, expedita ratione?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-center content" id="ticket">
+            <div class="col-md-6 order-2 order-md-1">
+                <img src="images/Museum Cartoon Illustration.jpeg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6 text-center">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 blurb pt-3">
+                        <h2>Ticket</h2>
+                        <img class=""
+                            src="images/Greek_Sculpture_Cartoon_Male_Head_Vector_Graphic_Illustration_Background__Religion__Background__Old_Background_Image_And_Wallpaper_for_Free_Download-removebg-preview.png"
+                            alt="" height="60" d-none d-lg-inline>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia maiores quas labore cumque?
+                            Nesciunt
+                            rerum iste cum obcaecati dignissimos facere, minus culpa. Voluptatibus, sapiente asperiores
+                            facere
+                            numquam officiis recusandae ad. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Assumenda totam voluptatibus sapiente aspernatur perspiciatis explicabo amet facilis vero
+                            laborum veniam voluptates, error ex quasi iste molestias voluptas, temporibus debitis
+                            voluptatem?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <!-- Function of Bootstrap -->
+    <script src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <!-- Function for Navigation Animation -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                let $nav = $('#navbar')
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height())
+            })
+        })
+    </script>
+</body>
+
+</html>
